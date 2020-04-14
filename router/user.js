@@ -200,12 +200,12 @@ router.get('/register/captcha',(req,res,next)=>{
 		size:5,//随机验证码中的字数
 		ignoreChars:'0oOl1',//忽略的字母
 		// charPreset:'123456789'//预设的字符库
-		width:120,//图片宽度默认150
-		height:30,//高度默认50
+		width:105,//图片宽度默认150
+		height:38,//高度默认50
 		fontSize:30,//字体大小
 		noise:4,//干扰线
 		color:true,//字体颜色彩色
-		background:'#c1eebd'//背景色
+		background:'#ccc'//背景色
 	}
 	let captcha = svgCaptcha.create(options);
 	// 1.在服务器端会话中存储此时生成的验证码

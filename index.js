@@ -16,8 +16,8 @@ app.listen(port, () => {
 app.use(bodyParser.json())
 // 2.cors
 app.use(cors({
-	// origin: ["http://localhost:8080", "http://127.0.0.1:8080"],
-	// credentials: true
+	origin: ["http://localhost:8080", "http://127.0.0.1:8080"],
+	credentials: true
 }))
 // 3.multer处理客户端上传文件
 
